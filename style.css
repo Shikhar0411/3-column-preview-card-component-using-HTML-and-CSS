@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@500&family=Lexend+Deca:wght@200;400&family=Outfit&family=Red+Hat+Display:wght@600&family=Roboto+Mono:ital@1&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600&family=Kumbh+Sans:wght@500&family=Lexend+Deca:wght@200;400&family=Outfit&family=Red+Hat+Display:wght@600&family=Roboto+Mono:ital@1&display=swap');
+
+:root{
+    /*Colors*/
+    --primary-color1: hsl(31, 77%, 52%);
+    --primary-color2: hsl(184, 100%, 22%);
+    --primary-color3: hsl(179, 100%, 13%);
+    --neutral-color1: hsla(0, 0%, 100%, 0.75);
+    --neutral-color2: hsl(0, 0%, 95%);
+    /*Font Weights*/
+    --font-weight1: 400;
+    --font-weight2: 700;
+
+    /*Font Family*/
+    --font-family1: 'Lexend Deca', sans-serif;
+    --font-family2: 'Big Shoulders Display', cursive;
+}
+
+/*Mobile Friedly Design*/
+body{
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Desktop Friendly Design*/
+@media (min-width: 375px) {
+    .container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        max-width: 80%;
+    }
+}
+
+.box-1{
+    padding: 2em;
+    background: var(--primary-color1);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.box-2{
+    padding: 2em;
+    background: var(--primary-color2);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.box-3{
+    padding: 2em;
+    background: var(--primary-color3);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+/*Utility Classes*/
+.section-image{
+    margin-bottom: 2em;
+}
+
+.section-header{
+    font-weight: var(--font-weight2);
+    font-family: var(--font-family2);
+    font-size: 2em;
+    margin-bottom: 1em;
+    color: var(--neutral-color2);
+}
+
+.section-para{
+    font-weight: var(--font-weight1);
+    font-family: var(--font-family1);
+    font-size: 1em;
+    margin-bottom: 3em;
+    color: var(--neutral-color1);
+}
+
+.btn{
+    border: 2px solid var(--neutral-color2);
+    width: 6em;
+    padding: 1em 2em;
+    border-radius: 2em;
+    background: var(--neutral-color2);
+    font-family: var(--font-family1);
+    font-weight: var(--font-weight1);
+}
+
+.style1{
+    color: var(--primary-color1);
+}
+
+.style2{
+    color: var(--primary-color2);
+}
+
+.style3{
+    color: var(--primary-color3);
+}
+
+.btn:hover{
+    cursor: pointer;
+    background: transparent;
+    color: var(--neutral-color2);
+}
